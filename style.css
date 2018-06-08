@@ -17,6 +17,7 @@
     float: right;
 }
 
+/* applys to all pages */
 .name {
     float: left;
     margin-left: 100px;
@@ -55,10 +56,97 @@ p {
     display: inline;
 }
 
-/* Style the footer */
+/* Style the footer APPLYS TO ALL PAGES*/
 .footer {
     background-color: grey;
     padding: 10px;
     border-top: teal 15px solid;
     text-align: center;
+}
+
+/* BELOW THIS IS FOR THE  PORTFOLIO GALLERY */
+
+/* Style the top navigation bar */
+.topnav2 {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav2 a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.tabs2 {
+    float: right;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content2 {
+    background-color: #ddd;
+    padding: 15px;
+    height: 400px; 
+    margin: 60px;
+    white-space: normal;
+    text-overflow: none;
+}
+
+h2 {
+    border-bottom-color: black;
+}
+
+/* .text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+} */
+
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+img {
+    float: left;
+    width: 33.33%;
+    height: auto;
+}
+
+img2 {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    height: auto;
+}
+
+img3 {
+    float: left;
+    width: 33.33%;
+    height: auto;
+}
+
+.row {
+    position: relative;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
