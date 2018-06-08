@@ -1,0 +1,64 @@
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+}
+
+.tabs {
+    float: right;
+}
+
+.name {
+    float: left;
+    margin-left: 100px;
+    background-color: teal;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 15px;
+    height: 400px; 
+    margin: 60px;
+    white-space: normal;
+    text-overflow: none;
+}
+
+h2 {
+    border-bottom-color: black;
+}
+.wedding {
+    width: 25%;
+    height: auto;
+    float: left;
+    padding: 10px;
+}
+
+p {
+    width: auto;
+    line-height: 30px;
+    display: inline;
+}
+
+/* Style the footer */
+.footer {
+    background-color: grey;
+    padding: 10px;
+    border-top: teal 15px solid;
+    text-align: center;
+}
