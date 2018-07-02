@@ -1,7 +1,15 @@
+
+/* BELOW applys to all pages */
+body {
+    background-color: darkolivegreen;
+}
 /* Style the top navigation bar */
+
 .topnav {
     overflow: hidden;
     background-color: #333;
+    position: static;
+    
 }
 
 /* Style the topnav links */
@@ -17,7 +25,6 @@
     float: right;
 }
 
-/* applys to all pages */
 .name {
     float: left;
     margin-left: 100px;
@@ -31,11 +38,11 @@
 }
 
 /* Style the content */
-.content {
+.container {
     background-color: #ddd;
     padding: 15px;
     height: 400px; 
-    margin: 60px;
+    margin: 75px 30px 75px 30px;
     white-space: normal;
     text-overflow: none;
 }
@@ -44,8 +51,8 @@ h2 {
     border-bottom-color: black;
 }
 .wedding {
-    width: 25%;
-    height: auto;
+    width: 300px;
+    height: 250px;
     float: left;
     padding: 10px;
 }
@@ -91,65 +98,50 @@ p {
     color: black;
 }
 
-/* Style the content */
-.content2 {
-    background-color: #ddd;
-    padding: 15px;
-    height: 400px; 
-    margin: 60px;
-    white-space: normal;
-    text-overflow: none;
-}
 
-h2 {
-    border-bottom-color: black;
-}
-
-/* .text-block {
+.work {
+    position: relative;
+    float: left;
+    width: 274px;
+    margin: 35px 35px 45px;
+    overflow: auto;
+    width: 150px;
+    height: auto;
+    
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 40px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
     position: absolute;
     bottom: 20px;
-    right: 20px;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-} */
-
-
-.column {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
     float: left;
-    width: 33.33%;
-}
-
-img {
-    float: left;
-    width: 33.33%;
+    width: 200px;
     height: auto;
-}
+    margin-top: 10px;
+    margin-right: 25px;
+  }
 
-img2 {
-    position: relative;
-    float: left;
-    width: 33.33%;
-    height: auto;
-}
-
-img3 {
-    float: left;
-    width: 33.33%;
-    height: auto;
-}
-
-.row {
-    position: relative;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /* CONTACT  FORM */
 
@@ -186,3 +178,51 @@ input[type=submit]:hover {
     background-color: #f2f2f2;
     padding: 20px;
 }
+
+/* `CSS` */
+
+#wrapper {
+    width: 80%;
+    margin: auto;
+    max-width: 980px;
+    min-width: 640px;
+  }
+  #column-main {
+    margin-left: 200px;
+  }
+  #column-sidebar {
+    width: 200px;
+    float: left;
+  }
+  @media screen and (max-width: 768px) {
+    #wrapper {
+      width: 90%;
+      min-width: 0;
+    }
+
+background-image: maroon;
+
+    #column-main {
+      margin-left: 0;
+    }
+    #column-sidebar {
+      width: auto;
+      float: none;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    #wrapper {
+      width: 75%;
+      min-width: 0;
+    }
+
+    background-color: blueviolet;
+
+    #column-main {
+      margin-left: 0;
+    }
+    #column-sidebar {
+      width: auto;
+      float: none;
+    }
+  }
